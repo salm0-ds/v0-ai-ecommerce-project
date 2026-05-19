@@ -352,9 +352,8 @@ interface InlineChatMessageProps {
 
 function InlineChatMessage({ message, onQuickAction }: InlineChatMessageProps) {
   const isUser = message.role === 'user'
-  const quickActions = message.cards?.find(c => c.type === 'quick-actions')?.data?.actions as
-    | { label: string; value: string }[]
-    | undefined
+  const quickActionsCard = message.cards?.find(c => c.type === 'quick-actions')
+  const quickActions = (quickActionsCard?.data as { actions?: { label: string; value: string }[] } | undefined)?.actions
 
   return (
     <div className={cn('flex items-end gap-2', isUser && 'flex-row-reverse')}>
