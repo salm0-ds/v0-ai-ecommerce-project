@@ -9,7 +9,7 @@ import { mockProducts } from '@/lib/mock-data'
 export default function HomePage() {
   return (
     <main className="min-h-screen">
-      <Header onOpenChat={() => {}} />
+      <Header />
 
       <HeroSection />
 
