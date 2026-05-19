@@ -72,14 +72,13 @@ export function HeroSection({ onSubmitQuery, isAssistantOpen }: HeroSectionProps
 
         {/* Main Headline */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tight text-balance mb-6">
-          Your personal
-          <span className="block text-accent">wellness journey</span>
-          starts here
+          AI-Powered
+          Store Assistant
         </h1>
 
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 text-pretty">
-          Science-backed supplements tailored to your unique needs. Ask our AI assistant anything about sleep, focus, energy, or gut health.
+          Ask our AI assistant anything about sleep, focus, energy, or gut health.
         </p>
 
         {/* AI Search Bar */}
